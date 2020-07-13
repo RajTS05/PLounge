@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+
+
+
+<div class="box">
+
+  <form method="post" action="/feed">
+      <%   newListItem.forEach(function(client){   %>
+         <div class="item">
+                  <br>
+                  <p class="title"><%= client.Firstname %></p>
+                   <p class="tcontent"><%= client.article %></p>
+                   <br>
+                   <hr>
+         </div>
+
+      <%   });   %>
+  </form>
+
+
+  <%- include('partials/footer') %>

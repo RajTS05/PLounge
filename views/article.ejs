@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<div class="details">
+  <form class="deets" action="/article" method="post">
+
+
+
+    <label for="content">Type Here</label>
+    <input type="text" name="content" value="">
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+
+         <div class="item">
+                <p><%= content %></p>
+
+         </div>
+
+</div>
+
+
+
+<%- include('partials/footer') %>

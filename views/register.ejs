@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+  <h1>Register</h1>
+
+<div class="Container">
+
+  <form action="/register" method="post">
+
+     <div class="top-row">
+       <div class="field-wrap">
+         <label>
+           First Name<span class="req">*</span>
+         </label>
+         <input type="text" name="firstname" required autocomplete="off"/>
+       </div>
+
+       <div class="field-wrap">
+         <label>
+           Last Name<span class="req">*</span>
+         </label>
+         <input type="text" name="lastname" required autocomplete="off"/>
+       </div>
+     </div>
+
+     <div class="field-wrap">
+       <label>
+         Email Address<span class="req">*</span>
+       </label>
+       <input type="email"required autocomplete="off" name="username" >
+     </div>
+
+     <div class="field-wrap">
+       <label>
+         Set A Password<span class="req">*</span>
+       </label>
+       <input type="password"required autocomplete="off" name="password">
+     </div>
+
+     <button type="submit" class="button button-block"/>Get started</button>
+
+     </form>
+
+   </div>
+
+
+
+</div>
+
+
+
+
+<%- include('partials/header') %>
